@@ -14,28 +14,32 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from './components/home/home.component';
 import {CatsComponent} from './components/cats/cats.component';
 import {DogsComponent} from './components/dogs/dogs.component';
+import {MonkeysComponent} from './components/monkeys/monkeys.component';
+import {MonkeysService} from './services/monkeys.service';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    CatsComponent,
-    DogsComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    APP_ROUTING,
-    AngularFontAwesomeModule,
-    ReactiveFormsModule
-  ],
-  providers: [
-    CatsService,
-    DogsService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        CatsComponent,
+        DogsComponent,
+        MonkeysComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        APP_ROUTING,
+        AngularFontAwesomeModule,
+        ReactiveFormsModule
+    ],
+    providers: [
+        CatsService,
+        DogsService,
+        MonkeysService
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

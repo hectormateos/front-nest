@@ -47,7 +47,6 @@ export class MonkeysComponent implements OnInit {
             const newMonkey = this.monkeyForm.value;
             this._monkeysService.postMonkey(newMonkey).subscribe(
                 data => {
-                    console.log('me viene de vuelta ', data)
                     this.monkeys.push(data);
                     this.error = false;
                     this.monkeyForm.reset();

@@ -16,6 +16,8 @@ import {CatsComponent} from './components/cats/cats.component';
 import {DogsComponent} from './components/dogs/dogs.component';
 import {MonkeysComponent} from './components/monkeys/monkeys.component';
 import {MonkeysService} from './services/monkeys.service';
+import {UsersComponent} from './components/users/users.component';
+import {UsersService} from './services/users.service';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import {MonkeysService} from './services/monkeys.service';
         HomeComponent,
         CatsComponent,
         DogsComponent,
-        MonkeysComponent
+        MonkeysComponent,
+        UsersComponent
     ],
     imports: [
         BrowserModule,
@@ -37,7 +40,8 @@ import {MonkeysService} from './services/monkeys.service';
     providers: [
         CatsService,
         DogsService,
-        MonkeysService
+        MonkeysService,
+        UsersService
     ],
     bootstrap: [AppComponent]
 })

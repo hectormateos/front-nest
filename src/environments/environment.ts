@@ -4,8 +4,11 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false,
-  animals: {
-    endpoint: 'http://localhost:3000'
-  }
+    production: false,
+    animals: {
+        endpoint: 'http://localhost:3000'
+    },
+    users: {
+        endpoint: 'http://localhost:3000'
+    }
 };

@@ -3,6 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {CatsComponent} from './components/cats/cats.component';
 import {DogsComponent} from './components/dogs/dogs.component';
 import {MonkeysComponent} from './components/monkeys/monkeys.component';
+import {UsersComponent} from './components/users/users.component';
 import {HomeComponent} from './components/home/home.component';
 
 const APP_ROUTES: Routes = [
@@ -10,6 +11,7 @@ const APP_ROUTES: Routes = [
     {path: 'cats', component: CatsComponent},
     {path: 'dogs', component: DogsComponent},
     {path: 'monkeys', component: MonkeysComponent},
+    {path: 'users', component: UsersComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

@@ -4,8 +4,12 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false,
-  animals: {
-    endpoint: 'http://nest02-env.vr6wm2ywwh.eu-west-1.elasticbeanstalk.com'
-  }
+    production: false,
+    animals: {
+        // endpoint: 'http://nest02-env.vr6wm2ywwh.eu-west-1.elasticbeanstalk.com'
+        endpoint: 'http://localhost:3000'
+    },
+    users: {
+        endpoint: 'http://localhost:3000'
+    }
 };

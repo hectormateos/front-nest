@@ -37,7 +37,10 @@
 <div class="container">
     <ul class="list-group">
         <li class="list-group-item" *ngFor="let m of users">
-            <p>{{m.name}}</p>
+            <p>
+                <span>{{m.name}}</span>
+                <span>({{m.age}})</span>
+            </p>
         </li>
 
         <div *ngIf="!users || 0 === users.length" class="alert alert-warning" role="alert">
